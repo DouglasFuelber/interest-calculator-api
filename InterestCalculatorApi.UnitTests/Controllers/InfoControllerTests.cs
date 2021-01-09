@@ -23,7 +23,7 @@ namespace InterestCalculatorApi.UnitTests.Controllers
         [Fact]
         public void Get_WhenCalled_ReturnsRepositoryUrl()
         {
-            var getResult = _controller.Get();
+            var getResult = (OkObjectResult)_controller.Get().Result;
             Assert.Equal("https://github.com/DouglasFuelber/interest-calculator-api", getResult.Value);
         }
     }
