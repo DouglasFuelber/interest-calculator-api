@@ -1,4 +1,6 @@
 ﻿using InterestCalculatorApi.Controllers;
+using InterestCalculatorApi.Services;
+using InterestCalculatorApi.UnitTests.Services;
 using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
@@ -7,10 +9,12 @@ namespace InterestCalculatorApi.UnitTests.Controllers
     public class InterestCalculatorControllerTests
     {
         InterestCalculatorController _controller;
+        IInterestCalculatorService _service;
 
         public InterestCalculatorControllerTests()
         {
-            _controller = new InterestCalculatorController();
+            _service = new InterestCalculatorServiceFake();
+            _controller = new InterestCalculatorController(_service);
         }
 
         [Fact]
