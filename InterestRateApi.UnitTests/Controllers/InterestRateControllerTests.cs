@@ -1,5 +1,4 @@
 ﻿using InterestRateApi.Controllers;
-using InterestRateApi.Services;
 using Xunit;
 
 namespace InterestRateApi.UnitTests.Controllers
@@ -7,11 +6,9 @@ namespace InterestRateApi.UnitTests.Controllers
     public class InterestRateControllerTests
     {
         InterestRateController _controller;
-        IInterestRateService _service;
         public InterestRateControllerTests()
         {
-            _service = new InterestRateService();
-            _controller = new InterestRateController(_service);
+            _controller = new InterestRateController();
         }
 
         [Fact]
@@ -19,6 +16,13 @@ namespace InterestRateApi.UnitTests.Controllers
         {
             var getResult = _controller.Get();
             Assert.IsType<double>(getResult);
+        }
+
+        [Fact]
+        public void Get_WhenCalled_ReturnsInterestRate()
+        {
+            var getResult = _controller.Get();
+            Assert.Equal(0.01, getResult);
         }
     }
 }

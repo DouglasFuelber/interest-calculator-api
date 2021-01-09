@@ -1,4 +1,3 @@
-using InterestRateApi.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
@@ -22,7 +21,6 @@ namespace InterestRateApi
         {
 
             services.AddControllers();
-            services.AddScoped<IInterestRateService, InterestRateService>();
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "InterestRateApi", Version = "v1" });
