@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterestRateApi", "Interest
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterestRateApi.UnitTests", "InterestRateApi.UnitTests\InterestRateApi.UnitTests.csproj", "{9275077F-5DA9-4D65-8E5C-77F0A1530A89}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InterestCalculatorApi.UnitTests", "InterestCalculatorApi.UnitTests\InterestCalculatorApi.UnitTests.csproj", "{07B5C6EF-6A44-40C7-835D-996AC59BF217}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -55,6 +57,18 @@ Global
 		{9275077F-5DA9-4D65-8E5C-77F0A1530A89}.Release|x64.Build.0 = Release|Any CPU
 		{9275077F-5DA9-4D65-8E5C-77F0A1530A89}.Release|x86.ActiveCfg = Release|Any CPU
 		{9275077F-5DA9-4D65-8E5C-77F0A1530A89}.Release|x86.Build.0 = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|x64.Build.0 = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Debug|x86.Build.0 = Debug|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|Any CPU.Build.0 = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|x64.ActiveCfg = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|x64.Build.0 = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|x86.ActiveCfg = Release|Any CPU
+		{07B5C6EF-6A44-40C7-835D-996AC59BF217}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
