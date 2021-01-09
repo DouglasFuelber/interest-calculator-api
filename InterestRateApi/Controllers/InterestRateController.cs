@@ -1,5 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.Extensions.Logging;
+﻿using InterestRateApi.Services;
+using Microsoft.AspNetCore.Mvc;
 
 namespace InterestRateApi.Controllers
 {
@@ -7,18 +7,17 @@ namespace InterestRateApi.Controllers
     [Route("taxajuros")]
     public class InterestRateController : ControllerBase
     {
+        private readonly IInterestRateService _service;
 
-        private readonly ILogger<InterestRateController> _logger;
-
-        public InterestRateController(ILogger<InterestRateController> logger)
+        public InterestRateController(IInterestRateService service)
         {
-            _logger = logger;
+            _service = service;
         }
 
         [HttpGet]
         public double Get()
         {
-            return 0.01;
+            return _service.GetInterestRate();
         }
     }
 }
