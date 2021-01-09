@@ -9,7 +9,7 @@ namespace InterestCalculatorApi.Controllers
         [HttpGet]
         public ActionResult<string> Get()
         {
-            return NotFound();
+            return Ok("https://github.com/DouglasFuelber/interest-calculator-api");
         }
     }
 }
