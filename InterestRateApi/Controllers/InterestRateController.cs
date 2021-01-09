@@ -7,9 +7,9 @@ namespace InterestRateApi.Controllers
     public class InterestRateController : ControllerBase
     {
         [HttpGet]
-        public double Get()
+        public ActionResult<double> Get()
         {
-            return 0.01;
+            return Ok(0.01);
         }
     }
 }

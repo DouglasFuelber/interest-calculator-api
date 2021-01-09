@@ -1,4 +1,5 @@
 ﻿using InterestRateApi.Controllers;
+using Microsoft.AspNetCore.Mvc;
 using Xunit;
 
 namespace InterestRateApi.UnitTests.Controllers
@@ -15,14 +16,14 @@ namespace InterestRateApi.UnitTests.Controllers
         public void Get_WhenCalled_ReturnsDouble()
         {
             var getResult = _controller.Get();
-            Assert.IsType<double>(getResult);
+            Assert.IsType<OkObjectResult>(getResult.Result);
         }
 
         [Fact]
         public void Get_WhenCalled_ReturnsInterestRate()
         {
-            var getResult = _controller.Get();
-            Assert.Equal(0.01, getResult);
+            var getResult = (OkObjectResult) _controller.Get().Result;
+            Assert.Equal(0.01, getResult.Value);
         }
     }
 }
