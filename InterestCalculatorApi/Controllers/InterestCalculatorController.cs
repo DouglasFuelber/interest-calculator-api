@@ -7,9 +7,9 @@ namespace InterestCalculatorApi.Controllers
     public class InterestCalculatorController : ControllerBase
     {
         [HttpGet]
-        public ActionResult<double> Get()
+        public ActionResult<double> Get(double valorinicial, int meses)
         {
-            return NotFound();
+            return Ok(0);
         }
     }
 }
