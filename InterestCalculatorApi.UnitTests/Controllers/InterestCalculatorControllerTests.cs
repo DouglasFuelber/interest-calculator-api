@@ -26,6 +26,7 @@ namespace InterestCalculatorApi.UnitTests.Controllers
 
         [Theory]
         [InlineData(100, 5, 105.10)]
+        [InlineData(123, 9, 134.52)]
         public void Get_WhenCalled_ReturnsInterestCalculated(double valorinicial, int meses, double jurosResultado)
         {
             var getResult = (OkObjectResult) _controller.Get(valorinicial, meses).Result;
